@@ -1,0 +1,31 @@
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(153, 124, 124); 
+}
+.header{
+    background-color: rgb(229, 216, 216);
+    width: 90%;
+    height: 18vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 2% 5% 0 5% ;
+}
+.heading{
+    background-color: rgb(177, 79, 79);
+    width: 40%;
+    height: 10vh;
+    border-radius: 20px;
+    margin-top: 1.8%;
+}
+.heading>h2{
+    text-align: center;
+    font-family:'Acme', sans-serif;
+    font-size: 6vh;
+    margin-top: 10px;
+}
