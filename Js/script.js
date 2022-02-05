@@ -1,4 +1,3 @@
-function submit () {
-    alert ( "hello new world") 
-
-}
+function submitAnswer() {
+    alert("Hello World!");
+  }
