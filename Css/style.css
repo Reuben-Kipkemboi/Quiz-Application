@@ -29,3 +29,8 @@ body{
     font-size: 6vh;
     margin-top: 10px;
 }
+#name{
+    text-align: center;
+    font-family:'Acme', sans-serif;
+    font-size: 8vh; 
+}
