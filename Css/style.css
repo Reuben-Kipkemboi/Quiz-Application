@@ -35,6 +35,7 @@ body{
     font-size: 8vh; 
 }
 form{
+    font-family:'ABeeZee', sans-serif;
     background-color: #E5D8D8;
     margin: 0 5% 0 5%;
     width: 90%;
@@ -42,8 +43,15 @@ form{
 }
 .note{
     text-align: center;
-    font-family:'ABeeZee', sans-serif;
+    
     font-size: 5vh;
     font-weight: bold;
     color: rgb(177, 79, 79);
+}
+#question1{
+    margin-left: 5%;
+}
+#question1>:first-child{
+    font-weight: bolder;
+    font-size: 3vh;
 }
