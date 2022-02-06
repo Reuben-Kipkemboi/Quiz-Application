@@ -1,51 +1,65 @@
-// function submitAnswer() {
-//     // alert("Hello World!");
-//     var score = 0; //Declaring variable score i.e the original score.
-//     var myAnswer1 = document.quiz-form.question1.value;  //tracks the current answer to question one.
-//     var myAnswer2 = document.quiz-form.question2.value;
-//     var myAnswer3 = document.quiz-form.question3.value;
-//     var myAnswer4 = document.quiz-form.question4.value;
-//     var myAnswer5 = document.quiz-form.question5.value;
-
-
-//     if (myAnswer1===1){score += 20};   //If statement that adds the points from the current score + 20.
-//     if (myAnswer2==="Class"){score += 20}; 
-//     if (myAnswer3==="1995"){score += 20}; 
-//     if (myAnswer4==="script"){score += 20}; 
-//     if (myAnswer5==="For"){score += 20}; 
-//     document.write(score);    //prints on the screen the output of the score. 
-//   }
-
-
-//  code 2 for javascript
-
+// storing the right values in this object
 var rightAnswers = {
   question1 : "1",
   question2 : "Class",
   question3 : "1995",
-  question4 : "Script",
+  question4 : "script",
   question5 : "For"
 };
-// what happens when the user submits the data from the form, we should fetch the data.
-let quizForm = document.getElementById("form");
+//  we should capture the data  when the users submits the answers.
+let form = document.getElementById("form");
 //Originally the score is Zero before beginning the quiz.
-let score = 0;
+var score = 0;
 
-var userAnswers = new userData(form);
-compareData(userAnswers);
+form.addEventListener ("submit", function (event) { 
+  // alert("Hello go and submit it")
+  event.preventDefault();
+  var userAnswers = new FormData(form);   //userData is that submitted data.
+  getData(userAnswers);
+})
 
-// getting the user data and calculating the score.
-function compareData(userAnswers) {
-  var question1 = userAnswers.get("1");
-  var question2 = userAnswers.get("Class");
+// getting the user data and calculating the score after the user has submitted the answers.
+function getData(userAnswers) {
+  var question1 = userAnswers.get("question1");
+  var question2 = userAnswers.get("question2");
+  var question3 = userAnswers.get("question3");
+  var question4 = userAnswers.get("question4");
+  var question5 = userAnswers.get("question5");
+
    
-if (question1 === rightAnswers[question1]) {
-  score += 10;  // Increments the score by value of 10.
-} else{
-  score -= 10
-}
-}
+  if (question1 == rightAnswers["question1"]){
+    score +=20;  // Adds the score by value of 20 points.
+  } 
+  if (question2 == rightAnswers["question2"]) {
+    score += 20;  // Adds the score by value of 20 points.
+  } 
+  if (question3 == rightAnswers["question3"]) {
+    score += 20;  // Adds the score by value of 20 points.
+  } 
+  if (question4 == rightAnswers["question4"]) {
+    score += 20;  // Adds the score by value of 20 points.
+  } 
+  if (question5 == rightAnswers["question5"]) {
+    score += 20;  // Adds the score by value of 20 points.
+  } 
+  // User results being printed on the screen.
+  let userScore = document.querySelector (".score");
+    userScore.textContent = 'Your Scored :' + '' + score; 
 
-function submitAnswer() {
-  document.write(score );
-}
+    document.write ("Your score is: " + score);
+
+    if(score >= 80) {
+      document.write(  "Congratulations, You've Excellently passed.");
+    }else{
+      if(score >= 50 && score < 80)
+      document.write( "Good Work, You have Fairly passed")
+    }
+
+
+    var delayInMilliseconds = 5000; //5 seconds
+
+    setTimeout(function() {
+      //Clearing of form fields after some seconds
+      window.location.reload();
+    }, delayInMilliseconds);
+  }

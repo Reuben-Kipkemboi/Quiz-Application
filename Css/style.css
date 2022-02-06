@@ -55,3 +55,8 @@ form{
     font-weight: bolder;
     font-size: 3vh;
 }
+#output{
+    font-size: 10vh;
+    font-weight: bold;
+    background-color: #E5D8D8;
+}
