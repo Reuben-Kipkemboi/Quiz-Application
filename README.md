@@ -51,7 +51,7 @@ Technologies used are:
 
 **Incase of inquiries and further support contact the indicated email.**
 #### Here is the link
-+ 
++ https://reuben-kipkemboi.github.io/Quiz-Application/
 
 **Here is the link to my design**
 #### The link to design.  
