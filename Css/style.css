@@ -48,10 +48,10 @@ form{
     font-weight: bold;
     color: rgb(177, 79, 79);
 }
-#question1{
+#question-one, #question-two,  #question-three,  #question-four,  #question-five{
     margin-left: 5%;
 }
-#question1>:first-child{
+#question-one>:first-child,  #question-two>:first-child,  #question-three>:first-child,  #question-four>:first-child,  #question-five>:first-child{
     font-weight: bolder;
     font-size: 3vh;
 }
