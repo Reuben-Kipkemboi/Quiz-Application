@@ -2,8 +2,10 @@
 
 #### **By Reuben Kipkemboi.**
 
-#### <p> A simple  web application that enables students who have finished a javascript course to undertake a test. The 
-application is composed of a form that has questions and multiple choices to that question.Five questions available and with there answers in multiple choices.</p>
+<p>A simple  web application that enables students who have finished a javascript course to undertake a test.
+The application is composed of a form that has questions and multiple choices to that question.Five questions available and with there answers in multiple choices.**
+The quiz application is made up of a form that the users put in there preferred choices and then click a submit-quiz button to
+submit the results and the score is calculated and the results displayed on the screen of the user</p>
  
 
 ## Table of contents.
@@ -42,6 +44,9 @@ Technologies used are:
 * CSS3- Cascading Style sheet was used to style the page and its contents and also make the page responsive.
 * Bootstrap- This enables responsiveness of the website and also use of its classes to style.
 * Javascript - Enables the display of the score and the calculations done. Therefore, enables us to dynamically update the content.
+
+## License Information.
+It is governed by the MIT License.
 
 ## Known bugs
 
