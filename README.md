@@ -46,9 +46,6 @@ Technologies used are:
 ## Known bugs
 
 + There are no known bugs.
-
-### License Information.
-
 ## Contact Information
 <kipkemboireuben866@gmail.com>
 
