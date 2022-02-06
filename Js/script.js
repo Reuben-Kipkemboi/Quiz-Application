@@ -54,10 +54,7 @@ function getData(userAnswers) {
       if(score >= 50 && score < 80)
       document.write( "Good Work, You have Fairly passed")
     }
-
-
-    var delayInMilliseconds = 5000; //5 seconds
-
+    var delayInMilliseconds = 7000; //7 seconds
     setTimeout(function() {
       //Clearing of form fields after some seconds
       window.location.reload();
