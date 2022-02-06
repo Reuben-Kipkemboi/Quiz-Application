@@ -18,13 +18,34 @@
 
 
 //  code 2 for javascript
-function submitAnswer() {
-  alert("Hello and welcome to todays Quiz");
+
+var rightAnswers = {
+  question1 : "1",
+  question2 : "Class",
+  question3 : "1995",
+  question4 : "Script",
+  question5 : "For"
+};
+// what happens when the user submits the data from the form, we should fetch the data.
+let quizForm = document.getElementById("form");
+//Originally the score is Zero before beginning the quiz.
+let score = 0;
+
+var userAnswers = new userData(form);
+compareData(userAnswers);
+
+// getting the user data and calculating the score.
+function compareData(userAnswers) {
+  var question1 = userAnswers.get("1");
+  var question2 = userAnswers.get("Class");
+   
+if (question1 === rightAnswers[question1]) {
+  score += 10;  // Increments the score by value of 10.
+} else{
+  score -= 10
 }
-// var rightAnswers = {
-//   question1 : "1",
-//   question2 : "Class",
-//   question3 : "1995",
-//   question4 : "Script",
-//   question5 : "For"
-// };
+}
+
+function submitAnswer() {
+  document.write(score );
+}
