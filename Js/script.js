@@ -52,7 +52,7 @@ function getData(userAnswers) {
       document.write("Congratulations, You've Excellently passed.");
     }else{
       if(score >= 50 && score < 80)
-      document.write( "Good Work, You have Fairly passed")
+      document.write(  "Good Work, You have Fairly passed")
     }
     var delayInMilliseconds = 7000; //7 seconds
     setTimeout(function() {
