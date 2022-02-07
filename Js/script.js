@@ -45,17 +45,19 @@ function getData(userAnswers) {
   // User results being printed on the screen.
   let userScore = document.getElementsByClassName(".score");
     // userScore.textContent = 'You Scored :'+ '' + score; 
-    document.write ("Your score is : " + score);
+    document.write ("Your score is:  " + '' + score);
 
     if(score >= 80) {
-      document.write("Congratulations, You've Excellently passed.");
-    }else{
-      (score >= 50 && score < 80)
-      document.write(  "Good Work, You have Fairly passed.");
-    }
-    var delayInMilliseconds = 17000; //7 seconds
+      document.write("Congratulations, You've Excellently passed. ");
+    }else if
+      (score >= 50 && score < 80){
+      document.write("Good Work, You have Fairly passed. ");
+    }else {
+        document.write( "You have to retake the quiz");
+      }
+    var delayInMilliseconds = 7000; //7 seconds
     setTimeout(function() {
       //Clearing of form fields after some seconds
       window.location.reload();
     }, delayInMilliseconds);
-  }
+}
