@@ -49,7 +49,7 @@ function getData(userAnswers) {
     document.write ("Your score is: " + score);
 
     if(score >= 80) {
-      document.write(  "Congratulations, You've Excellently passed.");
+      document.write("Congratulations, You've Excellently passed.");
     }else{
       if(score >= 50 && score < 80)
       document.write( "Good Work, You have Fairly passed")
