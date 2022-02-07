@@ -43,18 +43,17 @@ function getData(userAnswers) {
     score += 20;  // Adds the score by value of 20 points.
   } 
   // User results being printed on the screen.
-  let userScore = document.querySelector (".score");
-    userScore.textContent = 'You Scored :'+ '' + score; 
-
-    document.write ("Your score is: " + score);
+  let userScore = document.getElementsByClassName(".score");
+    // userScore.textContent = 'You Scored :'+ '' + score; 
+    document.write ("Your score is : " + score);
 
     if(score >= 80) {
       document.write("Congratulations, You've Excellently passed.");
     }else{
-      if(score >= 50 && score < 80)
-      document.write(  "Good Work, You have Fairly passed")
+      (score >= 50 && score < 80)
+      document.write(  "Good Work, You have Fairly passed.");
     }
-    var delayInMilliseconds = 7000; //7 seconds
+    var delayInMilliseconds = 17000; //7 seconds
     setTimeout(function() {
       //Clearing of form fields after some seconds
       window.location.reload();
