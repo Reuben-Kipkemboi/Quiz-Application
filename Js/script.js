@@ -44,7 +44,7 @@ function getData(userAnswers) {
   } 
   // User results being printed on the screen.
   let userScore = document.querySelector (".score");
-    userScore.textContent = 'Your Scored :' + '' + score; 
+    userScore.textContent = 'You Scored :'+ '' + score; 
 
     document.write ("Your score is: " + score);
 
