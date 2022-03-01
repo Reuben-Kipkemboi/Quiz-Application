@@ -32,6 +32,13 @@ This is a Simple quiz application that has the following features:
  + View the results which is printed on the screen after the score is calculated.
  + Select answers to the relevant questions at ease.
 
+ ![Quiz-Application Interface](/Images/Quiz-App.png)
+
+ + Submitting answers via button click.
+
+ ![Quiz-Application Submit button](/Images/submit.png)
+
+
 ## Installation Instructions
 
 To install one requires:
