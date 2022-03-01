@@ -46,7 +46,7 @@ Technologies used are:
 * Javascript - Enables the display of the score and the calculations done. Therefore, enables us to dynamically update the content.
 
 ## License Information.
-It is governed by the MIT License.
+ [MIT License](License)
 
 ## Known bugs
 
