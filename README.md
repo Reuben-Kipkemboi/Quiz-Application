@@ -32,11 +32,19 @@ This is a Simple quiz application that has the following features:
  + View the results which is printed on the screen after the score is calculated.
  + Select answers to the relevant questions at ease.
 
+ <hr>
+
+  * **Simple Interface**
+
  ![Quiz-Application Interface](/Images/Quiz-App.png)
 
- + Submitting answers via button click.
+ <hr>
+
+ + **Submitting answers via button click.**
 
  ![Quiz-Application Submit button](/Images/submit.png)
+
+ <hr>
 
 
 # Installation Instructions
@@ -48,21 +56,23 @@ To install one requires:
 # Technologies used
 Technologies used are:
 * HTML5- Hyper-text markup Language to create structures of the web-page.
-* CSS3- Cascading Style sheet was used to style the page and its contents and also make the page responsive.
+* CSS3- Cascading Style sheet was used to style the page and its contents and also make the page        responsive.
 * Bootstrap- This enables responsiveness of the website and also use of its classes to style.
 * Javascript - Enables the display of the score and the calculations done. Therefore, enables us to dynamically update the content.
 
 # License Information.
  [MIT License](License)
 
-## Known bugs
+# Known bugs
 
 + There are no known bugs.
+
 # Contact Info
 * [Email](rotichkipkemboireuben@gmail.com)
 
-# View my work
-+ https://reuben-kipkemboi.github.io/Quiz-Application/
+# Live Site
+
+#### **https://reuben-kipkemboi.github.io/Quiz-Application/**
 
 # The design 
 + https://www.figma.com/file/AvK6ISAPMG9Tx555NNjHB6/Quiz-app?node-id=0%3A1
