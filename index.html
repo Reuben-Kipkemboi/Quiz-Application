@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="./Css/style.css" type="text/css">
+
+    <!-- Link to google fonts  -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">     
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Quiz Application</title>
 </head>
+
 <body>
     <div>
         <div class="header">
@@ -22,57 +28,59 @@
             </div>
         </div>
         <h3 id="name">Quiz Board</h3>
-        <form  name= "quizForm" id="form"> 
+        <form name="quizForm" id="form">
             <p class="note">All Questions are Compulsory. Fill all the questions before submitting.*</p>
             <!-- Question one -->
-            <div id="question-one">     
+            <div id="question-one">
                 <p>Question 1 : How do we declare a variable in Javascript?</p>
-                <p><input type="radio" name="question1"  value="1" required> A . var newBaby</p>
-                <p><input type="radio" name="question1"  value="2" required> B.  v new-baby</p>
-                <p><input type="radio" name="question1"  value="3" required> C . variable newBaby</p>
-                <p><input type="radio" name="question1"  value="4" required> D . Var NewBaby</p>        
+                <p><input type="radio" name="question1" value="1" required> A . var newBaby</p>
+                <p><input type="radio" name="question1" value="2" required> B. v new-baby</p>
+                <p><input type="radio" name="question1" value="3" required> C . variable newBaby</p>
+                <p><input type="radio" name="question1" value="4" required> D . Var NewBaby</p>
             </div>
             <!-- Question Two -->
             <div id="question-two">
                 <p>Question 2 : Among the following, which is not a datatype in Javascript?</p>
-                <p><input type="radio" name="question2"  value="Number" required> A . Number</p>
-                <p><input type="radio" name="question2"  value="String" required> B.  String</p>
-                <p><input type="radio" name="question2"  value="Boolean"required> C . Boolean</p>
-                <p><input type="radio" name="question2"  value="Class" required> D . Class</p>        
+                <p><input type="radio" name="question2" value="Number" required> A . Number</p>
+                <p><input type="radio" name="question2" value="String" required> B. String</p>
+                <p><input type="radio" name="question2" value="Boolean" required> C . Boolean</p>
+                <p><input type="radio" name="question2" value="Class" required> D . Class</p>
             </div>
             <!-- Question Three -->
             <div id="question-three">
                 <p>Question 3 : In which year was Javascript created?</p>
-                <p><input type="radio" name="question3"  value="2020" required> A . 2020</p>
-                <p><input type="radio" name="question3"  value="2022" required> B.  2022</p>
-                <p><input type="radio" name="question3"  value="1995" required> C . 1995</p>
-                <p><input type="radio" name="question3"  value="1999" required> D . 1999</p>        
+                <p><input type="radio" name="question3" value="2020" required> A . 2020</p>
+                <p><input type="radio" name="question3" value="2022" required> B. 2022</p>
+                <p><input type="radio" name="question3" value="1995" required> C . 1995</p>
+                <p><input type="radio" name="question3" value="1999" required> D . 1999</p>
             </div>
             <!-- Question Four -->
             <div id="question-four">
                 <p>Question 4 : Which tag is used to link external javascript file in HTML?</p>
-                <p><input type="radio" name="question4"  value="script" required> A . script </p>
-                <p><input type="radio" name="question4"  value="body" required> B.  body </p>
-                <p><input type="radio" name="question4"  value="head" required> C . head </p>
-                <p><input type="radio" name="question4"  value="link" required> D . link </p>        
+                <p><input type="radio" name="question4" value="script" required> A . script </p>
+                <p><input type="radio" name="question4" value="body" required> B. body </p>
+                <p><input type="radio" name="question4" value="head" required> C . head </p>
+                <p><input type="radio" name="question4" value="link" required> D . link </p>
             </div>
             <!-- Question Five -->
             <div id="question-five">
                 <p>Question 5 : The following are ways to declare a variable in javascript, which one is not ?</p>
-                <p><input type="radio" name="question5"  value="let" required> A . let</p>
-                <p><input type="radio" name="question5"  value="For" required> B.  for</p>
-                <p><input type="radio" name="question5"  value="Const" required> C. const</p>
-                <p><input type="radio" name="question5"  value="Var" required> D . var</p>        
+                <p><input type="radio" name="question5" value="let" required> A . let</p>
+                <p><input type="radio" name="question5" value="For" required> B. for</p>
+                <p><input type="radio" name="question5" value="Const" required> C. const</p>
+                <p><input type="radio" name="question5" value="Var" required> D . var</p>
             </div>
             <!-- The Submit Quiz button -->
-            <input class="btn btn-outline-danger btn-block " type="submit" value="Submit Quiz"> 
+            <input class="btn btn-outline-danger btn-block " type="submit" value="Submit Quiz">
         </form>
         <div class="userScore">
             <p class="score">
-                
+
             </p>
         </div>
     </div>
-    <script src="./Js/script.js"></script>    <!--link to the external Javascript file.--> 
+    <script src="./Js/script.js"></script>
+    <!--link to the external Javascript file.-->
 </body>
+
 </html>
